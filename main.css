@@ -2,14 +2,14 @@
   text-align: center;
   padding-top: 5rem; }
 
-.operator-btns {
-  text-align: center;
-  padding-top: 2rem; }
+button {
+  padding: 1rem;
+  font-size: 2rem; }
 
-.result-btn {
-  text-align: center;
-  padding-top: 2rem; }
+.row-1, .row-2, .row-3, .row-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem; }
 
-.output-area {
-  text-align: center;
-  padding-top: 2rem; }
+.equals {
+  padding-left: 3rem;
+  padding-right: 3rem; }
