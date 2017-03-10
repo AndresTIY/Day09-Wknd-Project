@@ -6,11 +6,6 @@ var displayContent = display;
 var clear = document.getElementById('clear');
 var run = document.getElementById('equals');
 var operatorSel = '';
-
-var first;
-var second;
-var numberSaved;
-var number;
 var memory = '';
 var memory2 = '';
 var selectedNum = '';
@@ -19,34 +14,52 @@ var selectedNum2 = '';
 clear.addEventListener('click', function click(){
   display.textContent = '';
   memory = '';
-  number = ''
+  memory2 = '';
+  selectedNum = '';
+  selectedNum2 = '';
+  operatorSel = '';
 })
 
-// run.addEventListener('click', function operation(){
-//   if (operatorSel === "+"){
-//     var answer = Number(memory) + Number(memory)
-//   }
-// })
+run.addEventListener('click', function operation(){
+  if (operatorSel === "+"){
+    display.textContent = Number(memory) + Number(memory2);
+  } else if (operatorSel === "-"){
+    display.textContent = Number(memory) - Number(memory2);
+  } else if (operatorSel === "/"){
+    display.textContent = Number(memory) / Number(memory2);
+  } else if (operatorSel === "X"){
+    display.textContent = Number(memory) * Number(memory2);
+  }
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 operator[0].addEventListener('click', function click (){
   operatorSel = "+";
   display.textContent = operatorSel;
 });
-
 operator[1].addEventListener('click', function click (){
-  memory = memory + '-';
   operatorSel = '-';
-  display.textContent = memory;
+  display.textContent = operatorSel;
 });
 operator[2].addEventListener('click', function click (){
-  memory = memory + '/';
   operatorSel = "/"
-  display.textContent = memory;
+  display.textContent = operatorSel;
 });
 operator[3].addEventListener('click', function click (){
-  memory = memory + 'X';
   operatorSel = "X";
-  display.textContent = memory;
+  display.textContent = operatorSel;
 });
 
 
@@ -69,7 +82,7 @@ operator[3].addEventListener('click', function click (){
 
 inputAll[0].addEventListener('click', function click(){
 
-  if (operatorSel === "+"){
+  if (operatorSel.length === 1) {
     selectedNum2 = inputAll[0].value;
     memory2 = memory2 + selectedNum2;
     display.textContent = '';
