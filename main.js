@@ -4,12 +4,17 @@ var operator = document.getElementsByClassName('operator');
 var display = document.querySelector('#result');
 var displayContent = display;
 var clear = document.getElementById('clear');
+var run = document.getElementById('equals');
+var operatorSel = '';
+
 var first;
 var second;
 var numberSaved;
 var number;
 var memory = '';
+var memory2 = '';
 var selectedNum = '';
+var selectedNum2 = '';
 
 clear.addEventListener('click', function click(){
   display.textContent = '';
@@ -17,12 +22,76 @@ clear.addEventListener('click', function click(){
   number = ''
 })
 
+// run.addEventListener('click', function operation(){
+//   if (operatorSel === "+"){
+//     var answer = Number(memory) + Number(memory)
+//   }
+// })
+
+operator[0].addEventListener('click', function click (){
+  operatorSel = "+";
+  display.textContent = operatorSel;
+});
+
+operator[1].addEventListener('click', function click (){
+  memory = memory + '-';
+  operatorSel = '-';
+  display.textContent = memory;
+});
+operator[2].addEventListener('click', function click (){
+  memory = memory + '/';
+  operatorSel = "/"
+  display.textContent = memory;
+});
+operator[3].addEventListener('click', function click (){
+  memory = memory + 'X';
+  operatorSel = "X";
+  display.textContent = memory;
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 inputAll[0].addEventListener('click', function click(){
+
+  if (operatorSel === "+"){
+    selectedNum2 = inputAll[0].value;
+    memory2 = memory2 + selectedNum2;
+    display.textContent = '';
+    display.textContent = memory2
+  }
+
+  else if (operatorSel === '') {
+
+
   selectedNum = inputAll[0].value;
   memory = memory + selectedNum;
   display.textContent = memory;
+
+}
 })
+
+
+
+
+
+
+
 
 inputAll[1].addEventListener('click', function click(){
   selectedNum = inputAll[1].value;
