@@ -1,6 +1,6 @@
 .container {
   background: #00264d;
-  margin: 1rem 15.5rem;
+  margin: 3rem 35%;
   padding: 2rem;
   border-radius: 1rem; }
 
@@ -12,13 +12,13 @@ body {
   padding-top: 1rem; }
 
 button {
-  padding: 1rem;
+  padding: 7%;
   font-size: 2rem;
   background-color: dodgerblue;
   border-radius: 10px;
   border: 1px solid black; }
 
-.row-1, .row-2, .row-3, .row-4, .row-5 {
+.row {
   padding: .25rem; }
 
 .output-area {
@@ -34,10 +34,27 @@ output {
   padding-right: 1rem; }
 
 .clear {
-  padding: 1rem 1.7rem; }
+  padding: 7% 12%; }
 
 .equals {
-  padding: 1rem 2.8rem; }
+  padding: 7% 19%; }
 
 .clear, .operator, .equals, #pos-neg {
   background-color: #80bfff; }
+
+@media (max-width: 910px) {
+  .container {
+    margin: 2rem 30%; } }
+
+@media (max-width: 682px) {
+  .container {
+    margin: 1rem 20%; } }
+
+@media (max-width: 462px) {
+  .container {
+    margin: 1rem 10%; } }
+
+@media (max-width: 355px) {
+  .container {
+    margin: 1rem 0;
+    padding: 1rem 0; } }
