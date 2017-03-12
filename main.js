@@ -5,6 +5,7 @@ var display = document.querySelector('#result');
 var displayContent = display;
 var clear = document.getElementById('clear');
 var run = document.getElementById('equals');
+var decimal = document.getElementById('decimal');
 var operatorSel = '';
 var memory = '';
 var memory2 = '';
@@ -19,6 +20,29 @@ clear.addEventListener('click', function click(){
   selectedNum2 = '';
   operatorSel = '';
 })
+
+decimal.addEventListener('click', function addDecimal(){
+  if (operatorSel.length === 1) {
+    selectedNum2 = decimal.value;
+    memory2 = memory2 + selectedNum2;
+    display.textContent = memory2;
+  } else if (operatorSel === '') {
+    selectedNum = decimal.value;
+    memory = memory + selectedNum;
+    display.textContent = memory;
+  }
+})
+
+// inputAll[0].addEventListener('click', function click(){
+//   if (operatorSel.length === 1) {
+//     selectedNum2 = inputAll[0].value;
+//     display.textContent = memory2
+//   }
+//   else if (operatorSel === '') {
+//   selectedNum = inputAll[0].value;
+//   memory = memory + selectedNum;
+//   display.textContent = memory;
+//   }
 
 
 run.addEventListener('click', function operation(){

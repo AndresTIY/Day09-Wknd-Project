@@ -6,11 +6,12 @@
 button {
   padding: 1rem;
   font-size: 2rem;
+  background-color: dodgerblue;
 }
 .row-1, .row-2, .row-3, .row-4 {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding: .5rem .5rem;
 }
+
 
 
 
@@ -22,8 +23,12 @@ button {
 //   text-align: center;
 //   padding-top: 2rem;
 // }
-// .output-area {
-//   text-align: center;
-//   padding-top: 2rem;
-//
-// }
+.output-area {
+  border: 1px solid grey;
+    margin: 3rem 10rem 0 10rem;
+
+}
+output {
+  font-size: 2rem;
+  padding: 2rem;
+}
