@@ -1,11 +1,11 @@
 .container {
   background: #00264d;
-  margin: 1rem 10rem;
+  margin: 1rem 15.5rem;
   padding: 2rem;
   border-radius: 1rem; }
 
 body {
-  background: #b3d9ff; }
+  background: #b5d9ee; }
 
 .number-btns {
   text-align: center;
@@ -18,17 +18,26 @@ button {
   border-radius: 10px;
   border: 1px solid black; }
 
-.row-1, .row-2, .row-3, .row-4 {
-  padding: .5rem .5rem; }
+.row-1, .row-2, .row-3, .row-4, .row-5 {
+  padding: .25rem; }
 
 .output-area {
   background: #FAFAFA;
   border: 1px solid grey;
-  margin: 0 .5rem;
+  margin: 0 1.4rem;
   text-align: right;
   padding: 1rem 0;
   border-radius: 10px; }
 
 output {
   font-size: 2rem;
-  padding: 2rem; }
+  padding-right: 1rem; }
+
+.clear {
+  padding: 1rem 1.7rem; }
+
+.equals {
+  padding: 1rem 2.8rem; }
+
+.clear, .operator, .equals, #pos-neg {
+  background-color: #80bfff; }

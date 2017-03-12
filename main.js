@@ -13,8 +13,13 @@ var memory2 = '';
 var selectedNum = '';
 var selectedNum2 = '';
 
+if (display.textContent.length > 10){
+  console.log('yay');
+}
+
+
 clear.addEventListener('click', function click(){
-  display.textContent = '';
+  display.textContent = 0;
   memory = '';
   memory2 = '';
   selectedNum = '';
