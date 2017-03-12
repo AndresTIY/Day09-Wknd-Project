@@ -5,7 +5,7 @@
   border-radius: 1rem; }
 
 body {
-  background: #b5d9ee; }
+  background: linear-gradient(to right, #b3cce6, #6699cc); }
 
 .number-btns {
   text-align: center;
