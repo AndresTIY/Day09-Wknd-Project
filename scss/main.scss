@@ -1,10 +1,11 @@
+@import "container";
+
 body {
   background: #b3d9ff;
 }
 .number-btns {
   text-align: center;
     padding-top: 1rem;
-    margin: 0 10rem;
 }
 
 button {
@@ -18,21 +19,10 @@ button {
   padding: .5rem .5rem;
 }
 
-
-
-
-// .operator-btns {
-//   text-align: center;
-//     padding-top: 2rem;
-// }
-// .result-btn {
-//   text-align: center;
-//   padding-top: 2rem;
-// }
 .output-area {
   background: #FAFAFA;
   border: 1px solid grey;
-  margin: 3rem 12.5rem 0 12.5rem;
+  margin: 0 .5rem;
   text-align: right;
   padding: 1rem 0;
   border-radius: 10px;
